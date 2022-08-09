@@ -1,0 +1,95 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #100720;
+}
+
+h1 {
+    color: #FFC23C;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+
+    background-color: #1b004e;
+    max-width: 70%;
+    margin: 1rem auto;
+    border-radius: 15px;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #FA2FB5;
+}
+
+.switch {
+    display: flex;
+    justify-content: center;
+    margin: 0 1.5rem;
+}
+
+input {
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.truth {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.dare {
+    border-radius: 0px 10px 10px 0px;
+}
+
+label {
+    margin: 0;
+    background-color: #31087B;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100px;
+    text-align: center;
+    padding: 20px;
+}
+
+.pg {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.pg13 {
+    border-radius: 0px;
+}
+
+.r {
+    border-radius: 0px 10px 10px 0px;
+}
+
+input:checked+label {
+    background-color: #FFC23C;
+    color: black;
+}
+
+button {
+    margin: 4rem 0 2rem;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    border-radius: 15px;
+    background-color: #FA2FB5;
+}
+
+button:hover,
+button:active {
+    background-color: #ff0b9d;
+}

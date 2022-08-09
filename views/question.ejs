@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth or Dare</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/game.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <form action="/" method="post">
+        <h2>Choose content type / Rating</h2>
+
+        <div class="switch">
+            <input type="radio" name="rating" id="pg" value="pg">
+            <label for="pg" class="pg">PG</label>
+
+            <input type="radio" name="rating" id="pg13" value="pg13">
+            <label for="pg13" class="pg13">PG-13</label>
+
+            <input type="radio" name="rating" id="r" value="r">
+            <label for="r" class="r">R</label>
+        </div>
+
+        <h2>Choose TRUTH or DARE</h2>
+
+        <div class="switch">
+            <input type="radio" name="type" id="truth" value="truth">
+            <label for="truth" class="truth">TRUTH</label>
+
+            <input type="radio" name="type" id="dare" value="dare">
+            <label for="dare" class="dare">DARE</label>
+        </div>
+
+
+        <button type="submit">GENERATE</button>
+
+    </form>
+    <h1>
+        <%= OUTPUT %>
+    </h1>
+</body>
+
+</html>
