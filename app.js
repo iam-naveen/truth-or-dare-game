@@ -2,6 +2,7 @@ const express = require("express");
 const https = require("https");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+import("node-fetch");
 
 const app = express();
 app.use(express.static("static"));
