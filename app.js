@@ -1,8 +1,8 @@
-const express = require("express");
-const https = require("https");
-const bodyParser = require("body-parser");
-const ejs = require("ejs");
-import("node-fetch");
+import express from "express";
+
+import bodyParser from "body-parser";
+import ejs from "ejs";
+import fetch from "node-fetch";
 
 const app = express();
 app.use(express.static("static"));

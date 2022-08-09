@@ -8,6 +8,7 @@
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
+  "type": "module",
   "author": "Naveen Bharath",
   "license": "ISC",
   "dependencies": {
