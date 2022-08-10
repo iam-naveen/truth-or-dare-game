@@ -1,8 +1,14 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    margin: 0;
     box-sizing: border-box;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
     background-color: #100720;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
 }
 
 h1 {
@@ -13,6 +19,7 @@ h1 {
 
     background-color: #1b004e;
     max-width: 70%;
+    min-width: 50%;
     margin: 1rem auto;
     border-radius: 15px;
     padding: 4rem 2rem;
@@ -63,6 +70,11 @@ label {
     padding: 20px;
 }
 
+label.truth,
+label.dare {
+    font-size: 1.3rem;
+}
+
 .pg {
     border-radius: 10px 0px 0px 10px;
 }
@@ -75,7 +87,7 @@ label {
     border-radius: 0px 10px 10px 0px;
 }
 
-.rated{
+.rated {
     display: block;
     font-size: small;
 }
@@ -97,4 +109,17 @@ button {
 button:hover,
 button:active {
     background-color: #ff0b9d;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 5px;
+    font-size: small;
+    color: white;
+    line-height: 1.5;
+}
+
+footer>a {
+    text-decoration: underline;
+    color: #FFC23C;
 }

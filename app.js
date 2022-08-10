@@ -11,7 +11,10 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", function (req, res) {
-  res.render("question", { OUTPUT: "" });
+  res.render("question", {
+    OUTPUT:
+      "Select 'TRUTH or DARE' and if needed select 'U rating or 15+' and click GENERATE",
+  });
 });
 
 app.post("/", function (req, res) {
@@ -19,11 +22,17 @@ app.post("/", function (req, res) {
   const type = req.body.type;
   var rating = req.body.rating;
   if (rating == null) rating = "pg13";
-  const url =
-    "https://api.truthordarebot.xyz/api/" + type + "?rating=" + rating;
-  fetch(url)
-    .then((res) => res.json())
-    .then((data) => res.render("question", { OUTPUT: data.question }));
+  if (type == null) {
+    res.render("question", {
+      OUTPUT: "**Please choose either TRUTH or DARE**",
+    });
+  } else {
+    const url =
+      "https://api.truthordarebot.xyz/api/" + type + "?rating=" + rating;
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => res.render("question", { OUTPUT: data.question }));
+  }
 });
 
 app.listen(process.env.PORT || 3000, function () {
