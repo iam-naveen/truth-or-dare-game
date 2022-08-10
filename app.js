@@ -17,7 +17,8 @@ app.get("/", function (req, res) {
 app.post("/", function (req, res) {
   console.log(req.body);
   const type = req.body.type;
-  const rating = req.body.rating;
+  var rating = req.body.rating;
+  if (rating == null) rating = "pg13";
   const url =
     "https://api.truthordarebot.xyz/api/" + type + "?rating=" + rating;
   fetch(url)
