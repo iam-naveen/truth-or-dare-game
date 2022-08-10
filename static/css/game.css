@@ -18,9 +18,9 @@ h1 {
     line-height: 1.5;
 
     background-color: #1b004e;
-    max-width: 70%;
-    min-width: 50%;
-    margin: 1rem auto;
+    max-width: 250px;
+    min-width: 40%;
+    margin: 1rem;
     border-radius: 15px;
     padding: 4rem 2rem;
     display: flex;
