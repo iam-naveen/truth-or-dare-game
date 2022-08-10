@@ -75,6 +75,11 @@ label {
     border-radius: 0px 10px 10px 0px;
 }
 
+.rated{
+    display: block;
+    font-size: small;
+}
+
 input:checked+label {
     background-color: #FFC23C;
     color: black;
