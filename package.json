@@ -2,18 +2,15 @@
   "name": "truth-or-dare-game",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "type": "module",
   "author": "Naveen Bharath",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.0",
-    "ejs": "^3.1.8",
     "express": "^4.18.1",
     "https": "^1.0.0",
     "node-fetch": "^3.2.10"
