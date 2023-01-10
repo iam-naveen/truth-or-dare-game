@@ -11,8 +11,6 @@
   "author": "Naveen Bharath",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1",
-    "https": "^1.0.0",
-    "node-fetch": "^3.2.10"
+    "express": "^4.18.1"
   }
 }
