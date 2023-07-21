@@ -1,0 +1,71 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.userInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.input-btn {
+  max-width: 5rem;
+}
+
+span,
+.tagged {
+  line-height: 1.5;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.tagged::after {
+  content: 'rated';
+  display: block;
+  margin: 0;
+  line-height: 1.5;
+  font-size: small;
+  font-weight: 400;
+}
+
+.output-area {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 17rem;
+  height: fit-content;
+  max-height: 7rem;
+  background-color: rgb(22, 100, 192, .2);
+  color: white;
+  border-radius: 5px;
+}
+
+.plug {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: small;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  right: 7px;
+  bottom: 7px;
+  padding: 5px;
+  background-color: #1664c033;
+  border-radius: 5px;
+  color: #6eb0fc;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #6eb0fc;
+}
