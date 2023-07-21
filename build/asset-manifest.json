@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.a371412e.css",
-    "main.js": "/static/js/main.9c6f0bb2.js",
+    "main.css": "truth-or-dare-game/static/css/main.a371412e.css",
+    "main.js": "truth-or-dare-game/static/js/main.9c6f0bb2.js",
     "index.html": "/index.html",
-    "main.a371412e.css.map": "/static/css/main.a371412e.css.map",
-    "main.9c6f0bb2.js.map": "/static/js/main.9c6f0bb2.js.map"
+    "main.a371412e.css.map": "truth-or-dare-game/static/css/main.a371412e.css.map",
+    "main.9c6f0bb2.js.map": "truth-or-dare-game/static/js/main.9c6f0bb2.js.map"
   },
   "entrypoints": [
-    "static/css/main.a371412e.css",
-    "static/js/main.9c6f0bb2.js"
+    "truth-or-dare-game/static/css/main.a371412e.css",
+    "truth-or-dare-game/static/js/main.9c6f0bb2.js"
   ]
 }
